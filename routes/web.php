@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Welcome por defecto
+Route::get('/', function() { return view('welcome'); });
+
+// Index, listado de paises
+Route::get('/paises', 'PaisController@listadoPaises');
+
+// Agregar película
+Route::get('/pais/agregar', function() { return view('agregarPais'); });
+Route::post('/pais/agregar', 'PaisController@agregar');
+
+// Detalle Pais
+Route::get('/pais/{id}', 'PaisController@buscarPais');
+
+// BorrarPais
+Route::get('/pais/borrar/{id}', 'PaisController@detalleBorrarPais');
+Route::post('/pais/borrar/{id}', 'PaisController@borrarPais');
+
+// Continentes
+Route::get('/continentes', 'ContinenteController@listadoContinentes');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
