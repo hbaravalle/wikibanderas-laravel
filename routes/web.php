@@ -14,6 +14,8 @@
 // Welcome por defecto
 Route::get('/', function() { return view('welcome'); });
 
+Auth::routes();
+
 // Index, listado de paises
 Route::get('/paises', 'PaisController@listadoPaises');
 
@@ -31,5 +33,5 @@ Route::post('/pais/borrar/{id}', 'PaisController@borrarPais');
 // Continentes
 Route::get('/continentes', 'ContinenteController@listadoContinentes');
 
-Auth::routes();
+
 Route::get('/home', 'HomeController@index')->name('home');
