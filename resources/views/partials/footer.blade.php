@@ -1,4 +1,4 @@
-<footer class="container">
+<footer class="container mt-4">
     <small class="text-center">Hecho con <i class="icon ion-md-heart text-danger"></i> para los alumnos de DH</small>
 </footer>
 <!-- Scripts -->

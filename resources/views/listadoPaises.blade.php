@@ -22,7 +22,7 @@
                     </div>
                 </div>
             @empty
-                <h2>Aún no existen paises en la base de datos :(</h2>
+                <h2 class="mt-5 w-100 text-center">¡Rayos! No tengo paises para mostrar :(</h2>
             @endforelse
             
         </div>

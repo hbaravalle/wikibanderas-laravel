@@ -11,13 +11,10 @@
 |
 */
 
-// Welcome por defecto
-Route::get('/', function() { return view('welcome'); });
-
 Auth::routes();
 
 // Index, listado de paises
-Route::get('/paises', 'PaisController@listadoPaises');
+Route::get('/', 'PaisController@listadoPaises');
 
 // Agregar película
 Route::get('/pais/agregar', function() { return view('agregarPais'); });

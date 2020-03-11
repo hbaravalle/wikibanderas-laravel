@@ -3,14 +3,13 @@ ESTILOS GENERALES
 ==================*/
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #eaeaea;
     font-family: 'Poppins', sans-serif;
 }
 
 main {
     color: rgb(80, 80, 80);
-    min-height: calc(100vh - 55.6px);
 }
 
 main.__main-login {
